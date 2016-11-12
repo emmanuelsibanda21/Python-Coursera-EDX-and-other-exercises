@@ -1,0 +1,6 @@
+This is testing text parsing to see how well this will parse.
+This is testing the file again
+Second test uy908 8989 
+third testy $8 8987 hui 08
+Fourth @ 2902 test
+$80

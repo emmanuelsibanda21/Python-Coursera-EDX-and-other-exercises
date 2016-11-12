@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+		<div class="col-md-12">
+                <div id="Carousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://disrupt-africa.com/wp-content/uploads/2014/10/DA-logo-on-transparent-with-tag-small-e1414593297539.png" alt="Disrupt-Africa" style="max-width:30%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://www.htxt.co.za/wp-content/uploads/2014/12/Startups-logo.png" alt="HTXT" style="max-width:90%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="https://www.filepicker.io/api/file/94eyITkOQc28ARHLGG36" alt="Biz Community" style="max-width:80%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://techfinancials.co.za/wp-content/uploads/2016/03/techfinancials-logo-march16-2.png" alt="Image" style="max-width:70%;"></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="https://upload.wikimedia.org/wikipedia/en/1/12/SAfm_(South_Africa).gif" alt="Image" style="max-width:40%;"></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                </div><!--.carousel-inner-->
+                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                </div><!--.Carousel-->
+                 
+		</div>
+	</div>
+</div><!--.container-->

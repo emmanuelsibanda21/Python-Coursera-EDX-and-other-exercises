@@ -1,0 +1,41 @@
+'''Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.).
+
+I decided to have a little fun this project. This algorithm will ask you if you would like to test whether a sentence or a word is a palindrome then carry out the appropriate test depending on your choice and input
+'''
+#ask if user wants to test a word or sentence
+#ask for user's input
+#check if user's input matches the choice they entered (whether it's a word or sentence). If these two don't match tell the user
+#if sentence split the sentence by words, commas etc (split only takes one argument so use regular expressions)
+#compare the split sentence to the actual sentence- if its a match then the sentence is a palindrome
+#if user enters a word, split the word per character (list function does this fairly easily)
+#if split word and actual word match then the word is a palindrome
+
+import re
+def is_pal():
+  sentence = "sentence"
+  word = "word"
+  list_of_choices = [sentence, word]
+  cond = input("Would you like to test a sentence or a word? " + ' '.join(list_of_choices) + "\n")
+  if cond == sentence:
+    sentence = input("Enter your sentence here: ")
+    if ' ' in sentence:
+      split_input = re.findall(r"[\w']+", sentence)
+      reversed_input = list(reversed(split_input))
+      if split_input == reversed_input:
+        print("This sentence is a palindrome")
+      else:
+        print("This sentence is not a palindrome")
+    else:
+      print("Your sentence does not have any spaces!")
+  elif cond == word:
+        word = input("Enter your word here: ")
+        reversed_input = list(reversed(word))
+        if " " in word:
+          print("This is a sentence not a word")
+        elif list(word) == reversed_input:
+          print("This word is a palindrome")
+        else:
+          print("This word is not a palindrome")
+  else:
+    raise TypeError("{0} is an invalid choice. You must choose between a word or a sentence".format(cond))
+is_pal()

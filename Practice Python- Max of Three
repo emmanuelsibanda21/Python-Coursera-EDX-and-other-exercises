@@ -1,0 +1,15 @@
+'''Implement a function that takes as input three variables, and returns the largest of the three. Do this without using the Python max() function!'''
+
+#ask for user to enter 3 numbers
+#add numbers to list
+#sort list in ascending order
+#return the number that appears last
+
+def multiple_var():
+  first = int(input("Enter the first number:"))
+  second = int(input("Enter the second number:"))
+  third = int(input("Enter the third number:"))
+  list_of_nums = [first, second, third]
+  final_list = sorted(list_of_nums)
+  print("The largest number is:{0}".format(final_list[-1]))
+multiple_var()

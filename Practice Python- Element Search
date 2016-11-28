@@ -1,0 +1,16 @@
+'''Write a function that takes an ordered list of numbers (a list where the elements are in order from smallest to largest) and another number. The function decides whether or not the given number is inside the list and returns (then prints) an appropriate boolean.'''
+
+#function takes 2 arguments, one list and one int
+#split up string of integers into a list
+#sort list in ascending order
+#check if second argument (integer) is in list, if in list return true
+
+def some(x, *args):
+  lis = sorted(args)
+  print(lis)
+  print(x in lis) 
+
+#tests
+some(9, 8,2,4,5,6,7,90)
+some(9, 9, 9 ,2, 3, 6, 7, 8)
+some(0)

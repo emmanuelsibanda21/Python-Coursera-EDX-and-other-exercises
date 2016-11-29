@@ -1,0 +1,32 @@
+'''
+For every string listed, print "YES" if it is a valid mobile number and "NO" if it is not on separate lines. Do not print the quotes.
+
+Sample Input
+
+2
+9587456281
+1252478965
+Sample Output
+
+YES
+NO
+A valid mobile number is a ten digit number starting with a 7,8 or 9.
+'''
+#import regular expressions
+#string must start with, 7,8 or 9 (match)
+#check if the the string contains 10 numbers 
+#and check if string contains only numbers from 0-9 
+
+import re
+
+def isMobile(anumber):
+  if (bool(re.match("^[7-9]+.*", anumber))) and (bool(re.search(r'[0-9]{10}', anumber))):
+    print("YES")
+  else:
+    print("NO")
+
+#test
+
+isMobile("9587456281")
+isMobile("1252478965")
+isMobile("2")

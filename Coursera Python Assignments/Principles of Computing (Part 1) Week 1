@@ -1,0 +1,15 @@
+'''
+Write a function in Python that takes a list as input and repeatedly appends the sum of the last three elements of the list to the end of the list. Your function should loop for 25 times.
+'''
+
+lst = [0, 1, 2]
+def appendsums(lst):
+    count = 0
+    while count <= 25:
+        c = lst[-3:]
+        d = sum(c)
+        lst.append(d)
+        count +=1
+    c = lst[20]
+    print(c)
+appendsums(lst)

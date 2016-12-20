@@ -1,0 +1,23 @@
+'''Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+Suppose the following input is supplied to the program:
+Hello world!
+Then, the output should be:
+UPPER CASE 1
+LOWER CASE 9'''
+#changed the wording of the output
+#also counted non letter characters in string
+
+def count_upper(word):
+  upper_count = 0
+  lower_count = 0
+  whitespace = 0
+  for i in word:
+    if i == i.upper() and str.isalpha(i) == True: upper_count +=1
+    elif i == i.lower() and str.isalpha(i) == True: lower_count +=1
+    else: whitespace +=1
+  print('This sentence has {0} upper case letters, {1} lower case letters and {2} non letter characters'.format(upper_count, lower_count, whitespace))
+
+#testcases
+count_upper('UPPER CASE')
+count_upper('Hello world!')
+count_upper('THe ThInG thAt CanNot be ConCeivEd Is THIS')

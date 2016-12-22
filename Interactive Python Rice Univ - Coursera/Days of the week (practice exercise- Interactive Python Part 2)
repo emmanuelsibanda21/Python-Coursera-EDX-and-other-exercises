@@ -1,0 +1,11 @@
+'''Create a dictionary day_to_number that converts the days of the week "Sunday", "Monday", … into the numbers 0, 1, …, respectively.'''
+
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+day_of_week = dict((n, i) for (n, i) in zip(days, range(6)))
+
+#testcases
+print(day_of_week["Sunday"])
+print(day_of_week["Wednesday"])
+print(day_of_week["Thursday"])
+print(day_of_week["Friday"])
+print(day_of_week["Monday"])

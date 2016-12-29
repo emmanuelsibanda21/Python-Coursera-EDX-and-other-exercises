@@ -1,0 +1,24 @@
+'''Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+Suppose the following input is supplied to the program:
+hello world and practice makes perfect and hello world again
+Then, the output should be:
+again and hello makes perfect practice world
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+We use set container to remove duplicated data automatically and then use sorted() to sort the data.'''
+
+#import re module to split multiple delimiters
+#take in a sequence of words/strings
+#split string by comma, whitespace etc
+#check for duplicates, add words that do not have duplicates into new list
+#print new list
+
+######code#####
+
+import re
+string = input('Enter your sentence here')
+sep_string = re.split(',| ', string)
+final_list = []
+[final_list.append(x) for x in sep_string if x not in final_list]
+print(' '.join(final_list))

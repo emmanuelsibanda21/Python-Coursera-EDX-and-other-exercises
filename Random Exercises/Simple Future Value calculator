@@ -1,0 +1,16 @@
+'''Simple algorithm to help me calculate simple future value to help me in my Coursera course on valuations and investing. Will add more functions to help me calculate things throughout the course'''
+
+def present_val():
+  pv = int(input('Please enter the initial amount'))
+  r = float(input('Please enter the interest rate'))
+  period = int(input('Please enter the period'))
+  print('The interest rate is {0} %'.format(r *100))
+  print('The period is {0} years'.format(period))
+  print('The you will have after {0} years is {1}'.format(period, ((1+r)**period)*pv))
+
+present_val()
+
+
+####to do list####
+#allow users to enter percentages and not floats
+#

@@ -10,6 +10,14 @@ def present_val():
 
 present_val()
 
+'''Algorithm to calculate Effective Annual rate of interest'''
+
+def effective_annual_rate():
+  n = int(input('Enter compounding period: '))
+  i = float(input('Enter stated rate of interest: '))
+  print('The effective annual rate is {0}%'.format(((1 + (i/n))**n - 1)*100))
+  
+effective_annual_rate()
 
 ####to do list####
 #allow users to enter percentages and not floats

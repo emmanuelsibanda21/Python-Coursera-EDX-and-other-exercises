@@ -15,7 +15,8 @@ present_val()
 def effective_annual_rate():
   n = int(input('Enter compounding period: '))
   i = float(input('Enter stated rate of interest: '))
-  print('The effective annual rate is {0}%'.format(((1 + (i/n))**n - 1)*100))
+  total =(((1 + (i/n))**n - 1)*100)
+  print('The effective annual rate is {0}%'.format(round(total,2)))
   
 effective_annual_rate()
 

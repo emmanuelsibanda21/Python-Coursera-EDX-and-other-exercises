@@ -1,0 +1,21 @@
+'''Given 3 int values; a, b and c return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum '''
+#function that takes in 3 integers
+#check to see if the values of ints are not equal
+#if equal only count once
+#if not count all numbers
+
+def num_Counter(x,y,z):
+  x,y,z = int(x), int(y), int(z)
+  if x == y and x == z:y,z = 0,0
+  elif y == z: z = 0
+  elif z == x: z = 0
+  elif x == y: x = 0
+  nums = [x,y,z]
+  #test print(nums)
+  print(sum(nums))
+num_Counter(6,9,9)
+num_Counter(6,6,9)
+num_Counter(6,2,5)
+num_Counter(6,4,6)
+num_Counter(0,2,5)
+num_Counter(8,8,8)

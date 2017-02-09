@@ -1,0 +1,15 @@
+'''Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not count towards the sum and values to its right do not count. So for example, if b is 13, then both b and c do not count.'''
+#if i is greater than 13 or equals 13 convert i to 0
+#convert previous number to 0
+
+def num_Counter(x,y,z):
+  if x == 13: x,y,z = 0,0,0
+  elif y == 13: y,z = 0,0
+  elif z == 13: z = 0
+  nums= [int(x),int(y),int(z)]
+  #test print(nums)
+  print(sum(nums))
+  
+num_Counter(9,13,20)
+num_Counter(13,9,2)
+num_Counter(9,1,13)

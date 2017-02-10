@@ -1,0 +1,13 @@
+'''Given an array of scores, return true if each score is equal or greater than the one before. The array will be length 2 or more.'''
+#compare list to sorted list 
+
+def increment(*xy):
+  sorted_list = sorted(xy)
+  list_xy = list(xy)
+  if list_xy == sorted_list:
+    print('True')
+  else: print('False')
+    
+#test  
+increment(9,3,1)
+increment(1,2,3)

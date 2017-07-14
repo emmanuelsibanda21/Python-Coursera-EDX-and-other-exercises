@@ -1,0 +1,25 @@
+'''Fermat’s Last Theorem says that there are no integers a, b, and c such that
+a
+n +b
+n = c
+n
+for any values of n greater than 2.
+
+2. Write a function that prompts the user to input values for a, b, c and n, converts them to
+integers, and uses check_fermat to check whether they violate Fermat’s theorem.'''
+
+#this function checks if fermat's theory holds for all n values greater than 2
+def check_fermat(a,b,c,n):
+    if (n > 2 and c*n != (a*n)+(b*n)): 
+        print("Holy smokes, Fermat was wrong!")
+    else:
+        print("No that doesn't work")
+
+def ask_user():
+    try: #if you enter anything other than an integer you will get a print statement telling you to enter a number and call the function again
+        a,b,c,n = int(input('Enter a value for a:\n')), int(input('Enter a value for b:\n')), int(input('Enter a value for c:\n')), int(input('Enter a value for n:\n'))
+    except:
+        print('You are supposed to enter an integer, please call the function again')
+    check_fermat(a,b,c,n)
+
+        

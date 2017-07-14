@@ -1,0 +1,7 @@
+def do_twice(f,val):
+    f(val)
+    f(val)
+val = "spam"
+def print_twice(val):
+    print((val+' ')*2)
+do_twice(print_twice, val)
